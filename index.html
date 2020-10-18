@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Magic Ball</title>
 </head>
 <body>
     <div class="ball">
@@ -14,44 +14,7 @@
 
     <button id="button">Click Me</button>
 
-    <script>
-        let button= document.getElementById('button');
-        let circle= document.getElementById('circle');
-        let number= document.getElementById('number');
-        button.addEventListener('click', changeCircle);
-        var answers= ['No', 'Yes', 'God, no', 'God, yes', "Please don't", "Sure", 'Maybe later', 'Stop, go to bed', 'Do it!'];
-        var index= Math.floor(Math.random()*((answers.length-1)-0+1))+0;
-        
-        function changeCircle() {
-            if (!(circle.classList.contains('css-selector'))) { 
-                // circle.animate([
-                // {opacity: 1}, 
-                // {opacity: 0.5},
-                // {opacity: 0.9}
-                // ], { 
-                // duration: 2000,
-                // iterations: 1,
-                // fill: 'forwards'
-                // });
-                number.classList.toggle('result');
-                number.innerHTML= answers[index];
-                button.innerHTML= 'Try again';
-                
-                circle.classList.toggle('css-selector');
-            } else {
-                location= location;
-                // circle.classList.toggle('css-selector'); 
-                // button.innerHTML= 'Click Me';
-                // number.classList.toggle('result');
-                // number.innerHTML= '8';
-             }
-            }
-
-
-
-
-
-    </script>
+    <script src='script.js'></script>
 
 </body>
 </html>
